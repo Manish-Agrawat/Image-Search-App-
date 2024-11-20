@@ -21,14 +21,18 @@ async function apidata(inputsearch) {
     div.classList.add("data");
     const img = document.createElement("img");
     img.classList.add("img");
+    const paragraph = document.createElement("p");
+    paragraph.classList.add("paragraph");
+    paragraph.textContent = image.description ;
     img.src = image.urls.small;
     div.appendChild(img);
+    div.appendChild(paragraph);
     box.appendChild(div);
   });
 
   page++;
 
-  if (results.length < 10) {
+  if (results.length < 13) {
     showbtn.style.display = "none";
   } else {
     showbtn.style.display = "block";
@@ -53,7 +57,7 @@ showbtn.addEventListener("click", () => {
 search.addEventListener("input", (event) => {
   let searchvalue = search.value.trim();
   if (searchvalue === "") {
-    apidata("dog");
+    apidata("cat");
   }
 });
 
