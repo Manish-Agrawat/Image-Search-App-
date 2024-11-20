@@ -19,7 +19,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/image-search-web.git
+git clone(https://github.com/Manish-Agrawat/Image-Search-App-.git)
 cd image-search-web
 Open the index.html file in your browser.
 
